@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           Iris Lee - e-portfolio
+        </title>
+    </head>
+    
+	<style>
+		body{
+			margin:0px;
+			font-family: Calibri;
+			font-size: 14pt;
+			background-color: rgb(197,224,178);
+		}
+		
+		#banner1{
+			width:100%;
+			height:300px;
+			position: relative;
+		}
+		
+		#banner2{
+			width:100%;
+			height:600px;
+			background-image:url(http://imgur.com/p8hZS5W.png);
+			background-repeat:no-repeat;
+            background-position:center center;
+            background-size: cover;
+			position: relative;
+		}
+		
+		#tagline1{	
+			position: absolute;
+			left: 80px;
+            top:20%;
+            left:20%;
+            color:Black;
+            font-size: 70px;
+        }
+		
+		#tagline2{
+			position: absolute;
+			left: 40%;
+			bottom: 20%;
+            color:rgba(255, 255, 255, 0.6);
+            font-size: 70px;
+        }
+		
+		#box1{
+			width:100%;
+			height:300px;
+			background-color:#DCEDC1;
+			
+		}
+		
+		#box2{
+			width:100%;
+			height:300px;
+			background-color:#FFD3B6;
+			position: relative;
+			
+		}
+		
+		#box3{
+			width:100%;
+			height:600px;
+			background-color: rgb(197,224,178);
+			display:inline-block;
+			position: relative;
+
+		}
+		
+		#squarebox{
+			width:30%;
+			height:500px;
+			background-color:#FFAAA5;
+			margin:50px 0px 50px 100px;
+			dispaly: inline-block;
+		}
+		
+		.smallbox1{
+			width:18%;
+			height:auto;
+			position: absolute;
+			bottom: 0px;
+			
+		}
+		
+		#position1{
+			left: 0%;
+			background-image:url(http://i.imgur.com/ardnNgO.png);
+		}
+		
+		#position2{
+			left: 20%;
+			background-image:url(http://i.imgur.com/gCFDtgf.png);
+		}
+		
+		#position3{
+			left: 40%;
+			background-image:url(http://i.imgur.com/7czLYsp.png);
+		}
+		
+		#position4{
+			left: 60%;
+			background-image:url(http://i.imgur.com/5wRc8Zy.png);
+		}
+		
+		#position5{
+			left: 80%;
+			background-image:url(http://i.imgur.com/cl8q288.png);
+		}
+		
+		.profile_pic{
+			position:absolute;
+            left:45%;
+			bottom:-20%;
+            width:200px;
+            height:auto;
+            border-radius:50px;
+		}
+		
+		#name{
+			position:absolute;
+			
+			margin: 100px 0px 0px 49%;
+			
+            font-size: 30px;
+		}
+		
+		.title {
+            position:absolute;
+            top: 20%;
+            width: 10%;
+            height: 20%;
+            background-color:rgb(100,200,255);
+			left: 10%;
+        }
+		
+		
+		.color{
+			background-color:rgb(100,200,255);
+		}
+		
+		.abs {
+            position:absolute;
+            right: 0px;
+            top: 0px;
+            width: 130px;
+            height: 55px;
+            background-color:#DCEDC1;
+        }
+	
+        .rel {
+            position:absolute;
+            left:20px;
+            bottom:0px;
+			
+			background-repeat:no-repeat;
+			width:300px;
+            height:200px;
+        }
+		
+		
+		.textbox {
+			color:#000000;
+            font-size: 20px;
+			position:absolute;
+			margin: 10% 10% 10% 10%;
+		}
+		
+		.bio{
+			font-size: 40px;
+			color:#000000;
+			position:absolute;
+			margin: 3% 10% 10% 10%;
+		}
+		
+		ul {
+				list-style-type: none;
+				margin:0;
+				padding:0;
+				overflow: hidden;
+				background-color: rgb(241,153,93);
+				position: fixed;
+				top: 0;
+				width: 100%;
+			}
+		
+		li {
+		    display: inline;
+		    float: left;
+		}
+
+		li a{
+		    display: block;
+		    color: white;
+		    text-align: center;
+		    padding: 3vh 5vw;
+		    text-decoration: none;
+			
+		}
+	</style>
+	
+    <body>
+		<div id ='banner1'>
+			<h2 id ='tagline1'>Welcome!</h2>
+			<!--<button id ='cloudbutton'>Clouds</button>-->
+			<img class ='profile_pic' src="http://imgur.com/a0yh9u0.png" />	
+		</div>
+		<script>
+			var cloudButton = document.getElementById("cloudbutton");
+			var banner1 = document.getElementById("banner1");
+			cloudButton.onclick = function(){
+				banner1.style.backgroundImage = "url(http://media02.hongkiat.com/beautiful-clouds/giant-cloud.jpg)";
+			}
+		</script>
+		
+		
+		<div id ='box1'>
+			<h2 id='name'>Iris Lee</h2>
+			<!--<button id ='namebutton'>Change this box to red!</button>-->
+		</div>
+		
+		<script>
+			var nameButton = document.getElementById("namebutton");
+			var box1disp = document.getElementById("box1");
+			var buttonWidth = 100;
+			var buttonHeight = 100;
+			var r = 0;
+			var g = 0;
+			var b = 0; 
+			nameButton.onclick = function(){
+
+				box1disp.style.backgroundColor = "red"; 
+			}
+		</script>
+		<!--
+		<div id='box2'>
+			<a href="https://docs.google.com/document/d/1leAFUgEh6UVz_UL24BP9mp5tT074m98KbJn-Thzw9No/edit?usp=sharing"><div class='rel' id='position1'><div class='abs'>Resume</div></div></a>
+			<a href="https://citonline1.herokuapp.com/"><div class='rel' id='position2'><div class='abs'>Artifact 1: Picture Sharing</div></div></a>
+			<a href="https://irismidterm.herokuapp.com/"><div class='rel' id='position3'><div class='abs'>Artifact 2: Web Discussion Forum</div></div></a>
+			<div class='rel' id='position4'><div class='abs'>Communication</div></div>
+			<div class='rel' id='position5'><div class='abs'>Math</div></div>
+
+		</div> -->
+		
+		<div id='box3'>
+			<div class='bio'>Iris Lee</div>
+			<div class="textbox">
+			<br> 
+			I am a student in the Computer Information Technology Diploma program at British Columbia Institution of Technology (BCIT) and my anticipated graduation date is May 2018.
+			I wish to pursue a position as a Data Analyst at a challenging work environment. 
+
+			<br><br>During my studies at BCIT, I have explored a broad range of technologies including: object-oriented programming, database development and administration, data quality, web technologies and applications, and reporting tools. I also have a fundamental knowledge in system analysis and design as well as user interface/experience design. 
+			<br><br>I have over 1 year of experience using MS SQL Server 2012 as a developer and administrator with an in-depth understanding of designing and implementing databases using T-SQL and scripting method. During this time, I developed user defined functions and stored procedures in .NET CLR. Furthermore, I implemented security for logins, databases and objects. I also gain an overview of using simple statistical measures to analyze data quality at the columnar, record and table levels.
+			<br><br>Please click on the above links to see my resume and artifacts, thank you!
+			</div>
+			<!--<div id='squarebox'>
+			
+			<button id ='button'>Click to see picture</button>
+			</div>-->
+			<script>
+				var myButton = document.getElementById("button");
+				var disp = document.getElementById("squarebox");
+				var buttonWidth = 100;
+				var buttonHeight = 100;
+				var r = 0;
+				var g = 0;
+				var b = 0; 
+				myButton.onclick = function(){	
+					r = Math.round(Math.random()*255);
+					g = Math.round(Math.random()*255);
+					b = Math.round(Math.random()*255);
+					
+					disp.style.backgroundImage = "url(http://placekitten.com/500/300)";
+					myButton.style.width = buttonWidth + "px";
+					myButton.style.height = buttonHeight + "px";
+
+				}
+			</script>
+			
+
+		</div>
+	    
+	    	<ul>
+		    <li><a href="index.html" class="active">Home</a></li>
+		    <li><a href="projects.html" class="nonactive">Project 1 - Web Discussion Forum</a></li>
+		    <li><a href="projects2.html" class="nonactive">Project 2 - Picture Sharing</a></li>
+			<li><a href="resume.html" class="nonactive">Resume</a></li>
+			<li><a href="contact.html" class="nonactive">Contact</a></li>
+        	</ul>
+		
+		<!--<div id='banner2'>
+			<h2 id ='tagline2'>Thank You for Visiting!</h2>
+			<!--<button id ='button1'>Click here to see how big this button can expand to</button>
+	    <!--<button id ='delete'> Click to delete everything </button>
+		</div>-->
+		
+		<script>
+			var anotherButton = document.getElementById("button1");
+			var anotherdisp = document.getElementById("banner2");
+			var deleteButton = document.getElementById("delete");
+
+			anotherButton.onclick = function(){		
+				anotherButton.style.width = buttonWidth + "px";
+				anotherButton.style.height = buttonHeight + "px"
+			}
+			
+			deleteButton.onclick = function(){
+				 document.body.innerHTML = "";
+			}
+		</script>
+		
+	</body>
+</html>
